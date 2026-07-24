@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>vNext.3 — Thin Slice (WS-driven)</title>
+    <link rel="stylesheet" href="./dist/styles.css" />
+  </head>
+
+  <body>
+    <!--
+      Стартовая сцена Sprint 1:
+      - нет окон устройств,
+      - только кнопка "Автопоиск".
+      (ТЗ_vNext.3_Final_SSOT §4.1; SPRINT_PLAN_vNext.3.2 AC1-1)
+    -->
+    <div class="topbar">
+      <button id="btn-autosearch" class="btn">Автопоиск</button>
+    </div>
+
+    <!-- Mount point диалога "Автопоиск" -->
+    <div id="autosearch-mount"></div>
+
+    <!-- Mount point окон устройств -->
+    <div id="windows-root" class="windows-root"></div>
+
+    <script src="./dist/radiantos-app.js"></script>
+  </body>
+</html>

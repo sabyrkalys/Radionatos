@@ -1,0 +1,16 @@
+{
+  "name": "radiantos-vnext-3-10-7-tx-rx-routing-canonical-fix",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build:web": "vite build",
+    "build:standalone": "vite build --config vite.standalone.config.mjs && node tools/materialize_standalone.mjs",
+    "build": "npm run build:standalone",
+    "serve-dist": "python tools/serve_dist.py"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  }
+}
